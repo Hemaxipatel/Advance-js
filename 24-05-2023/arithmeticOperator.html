@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    function sum() {
+        let num1, num2, sum;
+        num1 = document.getElementById('num1').value;
+        num2 = document.getElementById('num2').value;
+        num1 = Number(num1);
+        num2 = Number(num2);
+        sum = num1 + num2;
+        alert("sum=" + sum); //addition
+
+        sum = num1 - num2;
+        alert("sub=" + sum);  //subtraction
+
+        sum = num1 * num2;
+        alert("mul=" + sum);  //multiplication
+
+        sum = num1 / num2;
+        alert("div=" + sum);  //divide
+
+        sum = num1 % num2;
+        alert("remi=" + sum);  //reminder
+    }
+</script>
+
+<body>
+    <form action="">
+        <label for="">Num1</label>
+        <input type="text" name="" id="num1">
+        <label for="">Num2</label>
+        <input type="text" name="" id="num2">
+        <button onclick="sum()">Click Here</button>
+    </form>
+</body>
+
+</html>

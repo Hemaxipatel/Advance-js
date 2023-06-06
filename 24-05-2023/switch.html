@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    function sum() {
+        let color;
+        let choice = prompt("press 1 for red\n press 2 for blue");
+        let pid = document.getElementById('p1');
+        choice = Number(choice);
+        alert(choice);
+
+        switch (choice) {
+            case 1:
+                pid.style.color = "red";
+                break;
+            case 2:
+                pid.style.color = "blue";
+                break;
+            default:
+                alert("wrong choice")
+                break;
+        }
+    }
+</script>
+
+<body>
+    <form action="">
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quibusdam quod et modi maxime
+            impedit harum quos quam doloribus eaque reprehenderit, debitis repellat beatae eius, perferendis quidem
+            voluptas illo aspernatur?</p>
+        <button onclick="sum()">Click Here</button>
+    </form>
+</body>
+
+</html>
