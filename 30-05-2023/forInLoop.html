@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function objectEx() {
+        let student = {
+            name: "mahir",
+            subject: "HTML",
+            email: "mahir@gmail.com"
+        }
+        let str = ""
+        for (let key in student) {
+            str += `<p>${key} : ${student[key]}</p>`
+        }
+        document.getElementById('test').innerHTML = str
+    }
+</script>
+
+<body>
+    <button onclick="objectEx()">Click Here</button>
+    <div id="test"></div>
+</body>
+
+</html>

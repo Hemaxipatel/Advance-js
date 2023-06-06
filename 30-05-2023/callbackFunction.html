@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function evenprint(num) {
+        alert(`${num} is even`)
+    }
+    function oddprint(num) {
+        alert(`${num} is odd`)
+    }
+    function askQuestion(que, evenprint, oddprint) {
+        ans = prompt(que)
+        ans = Number(ans)
+        if (ans % 2 == 0) {
+            evenprint(ans)
+        } else {
+            oddprint(ans)
+        }
+    }
+    function callbackFunction() {
+        askQuestion("enter value", evenprint, oddprint)
+    }
+</script>
+
+<body>
+    <button onclick="callbackFunction()">Click Here</button>
+</body>
+
+</html>

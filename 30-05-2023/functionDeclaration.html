@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function myfunction() {  //function declaration
+        let str = `<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ullam rem distinctio voluptatum quaerat corrupti architecto, reiciendis magni. Eligendi enim, dolorem quaerat ad laboriosam repellendus debitis itaque harum aut eum.</p>`;
+        document.getElementById('test').innerHTML = str
+    }  //str is a local variable
+</script>
+
+<body>
+    <button onclick="myfunction()">Click Here</button>
+    <div id="test"></div>
+</body>
+
+</html>

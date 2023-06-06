@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function objectEx() {
+        let student = {
+            name: "mahir",
+            subject: "HTML"
+        }
+        student.email = "mahir@gmail.com"  //add property
+        student["assignment done"] = true
+        delete student.subject  //delete property
+        student["assignment done"] = true
+        delete student["assignment done"]
+        console.log(student)
+        alert(student)
+    }
+</script>
+
+<body>
+    <button onclick="objectEx()">Click Here</button>
+    <div id="test"></div>
+</body>
+
+</html>
