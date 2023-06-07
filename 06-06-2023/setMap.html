@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function createSet() {
+            let student = new Set()
+            student.add("Mahir")  //add new element to the set
+            student.add("Kiyaan")
+            student.add("Vinee")
+            student.add("Vamika")
+            student.delete("Kiyaan")  //remove element from a set
+            // student.clear()  //remove all elements            
+
+            console.log(student)
+            console.log(student.has("Vinee"))  //return ture if value exists
+
+            let iterator1 = student.values() //return a new set iterator with all the values
+            console.log(iterator1.next().value)
+            console.log(iterator1.next().value)
+
+            let setIter = student.keys()  //exactly equivalent to the values
+            console.log(setIter.next().value)
+
+            let iter = student.entries()
+            for (let entry of iter) {
+                console.log(entry)
+                //return a new set iterator object that contains an array of [value,value] for each element in set  of object
+            }
+            console.log(student.size)  //represnting how many entries the set object has
+
+            let user = new Map()
+            user.set("uname", "Ananya")
+            user.set("subject", "Java")
+            console.log(user)
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="createSet()">Click</button>
+</body>
+
+</html>

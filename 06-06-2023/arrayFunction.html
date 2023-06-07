@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+            let fruits = ["apple", "banana", "graps"]
+            delete fruits[1]
+            fruits.splice(2, 2)  //remove index & value
+            console.log(fruits)
+            let subject = ["Ajs", "Php", "Bootstrap", "jQuery", "Asp.net"]
+            console.log(subject.slice(1, 5))
+            console.log(fruits.concat(subject))
+            let numArray = ["11", "356", "25", "40", "100"]
+            numArray.sort(function (a, b) {
+                return b - a  //descending
+            })
+            console.log(numArray)
+
+            let strarr = ["a", "m", "x", "k", "g"]
+            /*strarr.sort(function (a, b) {
+                return a-b
+            })*/
+            console.log(strarr.sort())
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="myFunction()">Click</button>
+</body>
+
+</html>
