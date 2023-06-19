@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+        let newArr = arr.map((ex, i) => {
+            console.log(ex)
+            console.log("i->", i)
+            return ex + i
+        });
+        console.log("arr ->", arr);
+        console.log("newArr->", newArr)
+
+        //reducer
+        let total = newArr.reduce((lastEle, ele) => {
+            console.log("lastEle is:", lastEle)
+            console.log("ex->", ele)
+            return lastEle + ele
+        });
+        console.log("total is->", total)
+
+    </script>
+</body>
+
+</html>
